@@ -1,0 +1,7 @@
+odules are a critical component of production-grade Terraform configurations. It gives infrastructure developers the ability to split infrastructure services up into separate components. For example, you can have a module for deploying EC2 Instances and a module for deploying VPCs. You can then use each module as a building block for creating entire environments in AWS.
+
+Terraform configuration files that are thousands of lines of code are considered an anti-pattern. Infrastructure code becomes unmanageable, and execution plans can take over 10 minutes to create. Instead, split the code up into modules. Modules separate pieces of the infrastructure into reusable, testable units.
+
+Modules also provide a way for the community to share Terraform configurations with others. There are hundreds of modules on the Terraform Registry. It is highly recommended to look at the community-made modules before creating your own from scratch. The State of DevOps report shows that companies that re-use code are high performers.
+
+In Terraform, we can create modules to build re-usable infrastructure components. For example, a module can exist for a MySQL environment and a separate one can exist for EC2 Instances. The modules can then be used in combination like building blocks to build and deploy AWS services for various environments. 
