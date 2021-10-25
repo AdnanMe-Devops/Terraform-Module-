@@ -1,0 +1,7 @@
+utput "id" {
+    description = "id of EC2"
+    value = aws_instance.server.id
+}
+The output block will allow the module to output the ID value of the EC2 so it can be passed through to other resources within a Terraform configuration. 
+
+ 
