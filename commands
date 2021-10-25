@@ -1,0 +1,29 @@
+terminal window will appear at the bottom.
+
+ 
+
+20. Inside the terminal, input the following command to change directory to the terraformlab folder:
+
+cd terraformlab
+ 
+
+21. Initialize the directory for Terraform by inputting the terraform init command into the terminal:
+
+
+terraform init
+
+
+The AWS provider is downloaded during the initialization process. Also notice the module is initialized. Since the module is sourced locally within a child folder, it is not necessary to download the module. However, modules can be sourced in other places like the Terraform registry and would be downloaded during the initialization phase.
+
+ 
+
+22. Run terraform apply:
+
+terraform apply
+ 
+
+23. Input yes to deploy the config:
+
+
+
+The EC2 module has been used to deploy the EC2 instance. In this example, you created a module and stored it in a child folder. You can also use other sources for modules like version control repositories like GitHub. HashiCorp also has a public module registry called the Terraform Registry, which hosts community-made modules. 
